@@ -11,6 +11,6 @@
     <title>$Title$</title>
   </head>
   <body>
-  <h2>Spring MVC Demo</h2>
+  <h2>Default INDEX.JSP Spring MVC Demo</h2>
   </body>
 </html>
