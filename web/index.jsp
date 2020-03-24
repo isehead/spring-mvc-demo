@@ -11,6 +11,6 @@
     <title>$Title$</title>
   </head>
   <body>
-  $END$
+  <h2>Spring MVC Demo</h2>
   </body>
 </html>
