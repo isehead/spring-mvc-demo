@@ -4,11 +4,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-
 import javax.servlet.http.*;
 
 @Controller
-@RequestMapping("/hello")
+//@RequestMapping("/hello")
 public class HelloWorldController {
 
     // controller method to show initial HTML form
