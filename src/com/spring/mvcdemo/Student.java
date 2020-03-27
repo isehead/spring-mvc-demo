@@ -10,6 +10,8 @@ public class Student {
     private String lastName;
     private String country;
     private String favoriteLanguage;
+    private String[] knownOS;
+
 //    private LinkedHashMap<String, String> countryOptions;
 
     public Student() {
@@ -25,6 +27,15 @@ public class Student {
 //    public LinkedHashMap<String, String> getCountryOptions() {
 //        return countryOptions;
 //    }
+
+
+    public String[] getKnownOS() {
+        return knownOS;
+    }
+
+    public void setKnownOS(String[] knownOS) {
+        this.knownOS = knownOS;
+    }
 
     public String getCountry() {
         return country;

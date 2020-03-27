@@ -28,6 +28,13 @@
     Haskell <form:radiobutton path="favoriteLanguage" value="Haskell" />
     <br><br>
 
+    Operating systems experience:
+    Windows<form:checkbox path="knownOS" value="Windows" />
+    Linux<form:checkbox path="knownOS" value="Linux" />
+    macOS<form:checkbox path="knownOS" value="macOS" />
+    Android<form:checkbox path="knownOS" value="Android" />
+    <br><br>
+
     <input type="submit" value="Submit" />
 </form:form>
 
