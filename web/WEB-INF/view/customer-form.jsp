@@ -6,7 +6,9 @@
     <title>Customer registration form</title>
 
     <style>
-        .error {color:red}
+        .error {
+            color: red
+        }
     </style>
 </head>
 
@@ -16,7 +18,7 @@
 
 <br><br>
 
-<form:form action="/processForm" modelAttribute="customer">
+<form:form action="processForm" modelAttribute="customer">
     First name: <form:input path="firstName"/>
     Last name (*): <form:input path="lastName"/>
     <form:errors path="lastName" cssClass="error"/>
