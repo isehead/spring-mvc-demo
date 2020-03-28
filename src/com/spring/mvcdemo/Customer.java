@@ -14,6 +14,19 @@ public class Customer {
     @Max(value = 10, message = "must be <= 10")
     private int freePasses;
 
+    @NotNull(message = "is required")
+    @Size(min = 6, message = "is required")
+    @Pattern(regexp = "^[0-9]{6}", message = "6 digits only")
+    private String postalCode;
+
+    public String getPostalCode() {
+        return postalCode;
+    }
+
+    public void setPostalCode(String postalCode) {
+        this.postalCode = postalCode;
+    }
+
     public int getFreePasses() {
         return freePasses;
     }
