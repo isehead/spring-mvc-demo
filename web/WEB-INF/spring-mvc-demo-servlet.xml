@@ -27,17 +27,18 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
+<!--    &lt;!&ndash; Adding resources location &ndash;&gt;-->
+<!--    <mvc:resources mapping="/resources/**" location="/resources/">-->
+<!--    </mvc:resources>-->
+
+    <!-- List of countries file -->
+    <util:properties id="countryOptions" location="/countries.properties"/>
+
+    <!--Messages file -->
     <bean id="messageSource"
-          class="org.springframework.context.support.ResourceBundleMessageSource">
-
-        <property name="basenames" value="resources/messages"/>
+          class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+        <property name="basenames" value="WEB-INF/messages/messages" />
     </bean>
-
-    <!-- Adding resources location -->
-    <mvc:resources mapping="/resources/**" location="/resources/">
-    </mvc:resources>
-
-    <util:properties id="countryOptions" location="/countries.properties" />
 
 </beans>
 
