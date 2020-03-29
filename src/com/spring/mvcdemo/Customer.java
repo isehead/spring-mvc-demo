@@ -1,5 +1,7 @@
 package com.spring.mvcdemo;
 
+import validation.CourseCode;
+
 import javax.validation.constraints.*;
 
 public class Customer {
@@ -19,6 +21,17 @@ public class Customer {
     @Size(min = 6, message = "is required")
     @Pattern(regexp = "^[0-9]{6}", message = "6 digits only")
     private String postalCode;
+
+    @CourseCode(value = "TOPS", message = "must start with 'TOPS'")
+    private String courseCode;
+
+    public String getCourseCode() {
+        return courseCode;
+    }
+
+    public void setCourseCode(String courseCode) {
+        this.courseCode = courseCode;
+    }
 
     public String getPostalCode() {
         return postalCode;
