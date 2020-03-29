@@ -13,7 +13,7 @@ import java.lang.annotation.Target;
 public @interface CourseCode {
 
     // define default course code
-    public String value() default "ICE";
+    public String[] value() default {"ICE"};
 
     // define error message
     public String message() default "must start with 'ICE'";

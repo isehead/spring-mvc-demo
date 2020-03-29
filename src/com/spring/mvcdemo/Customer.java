@@ -22,7 +22,7 @@ public class Customer {
     @Pattern(regexp = "^[0-9]{6}", message = "6 digits only")
     private String postalCode;
 
-    @CourseCode(value = "TOPS", message = "must start with 'TOPS'")
+    @CourseCode(value = {"TOPS", "ICE"}, message = "must start with 'TOPS' or 'ICE'")
     private String courseCode;
 
     public String getCourseCode() {
